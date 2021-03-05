@@ -1,0 +1,46 @@
+.square{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 50px;
+}
+
+
+.container {
+    border: 2px solid black;
+    height: 450px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: height 2s,border-radius 2s;
+}
+
+div.container > .odd {
+    transition: transform 2s ease-in-out;
+    background-color: pink;
+}
+
+
+div.container:hover > .odd {
+    transform: translate(250px) rotate(-1080deg) scale(0.75);
+}
+
+div.container > .even {
+    transition: transform 2s ease-in-out;
+}
+
+
+div.container:hover > .even {
+    transform: translate(-250px) rotate(1080deg) scale(2);
+}
+
+
+div.container:hover {
+    height: 500px;
+    border-radius: 10px;
+}
