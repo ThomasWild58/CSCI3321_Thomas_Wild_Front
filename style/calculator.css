@@ -1,0 +1,61 @@
+
+#display { grid-area: display; }
+.plus { grid-area: plus; }
+.minus { grid-area: minus; }
+.multiply { grid-area: multiply; }
+.divide { grid-area: divide; }
+.clear-key { grid-area: C; }
+.digit-7 { grid-area: seven; }
+.digit-8 { grid-area: eight; }
+.digit-9 { grid-area: nine; }
+
+.digit-4 { grid-area: four; }
+.digit-5 { grid-area: five; }
+.digit-6 { grid-area: six; }
+
+.digit-1 { grid-area: one; }
+.digit-2 { grid-area: two; }
+.digit-3 { grid-area: three; }
+.digit-0 { grid-area: zero; }
+.equal-sign {  grid-area: E;
+padding: 120px 0;}
+
+
+#container {
+
+  display: grid;
+  width: 300px;
+  height: 400px;
+  margin:auto;
+  padding: 10px;
+  border-radius: 5px;
+  grid-gap: 5px;
+  grid-template-areas: 
+  'display display display display'
+  'plus minus multiply divide'
+  'seven eight nine E'
+  'four five six E'
+  'one two three E'
+  'C C zero E';
+   background-color: #2196F3;
+}
+
+.key
+{
+    background-color: white;
+    font-size: 20px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 50px;
+    cursor:pointer;
+}
+
+#display
+{
+border-radius: 5px;
+height: 45px;
+text-align: right;
+background-color: white;
+line-height: 45px;
+}
+
