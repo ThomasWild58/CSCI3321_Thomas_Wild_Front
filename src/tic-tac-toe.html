@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" href="../style/tic-tac-toe.css">
+
+
+<script src="../scripts/tic-tac-toe.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id=1 class="square" onclick=placeMarker(1);></div>
+        <div id=2 class="square" onclick=placeMarker(2);></div>
+        <div id=3 class="square" onclick=placeMarker(3);></div>
+        <div id=4 class="square" onclick=placeMarker(4);></div>
+        <div id=5 class="square" onclick=placeMarker(5);></div>
+        <div id=6 class="square" onclick=placeMarker(6);></div>
+        <div id=7 class="square" onclick=placeMarker(7);></div>
+        <div id=8 class="square" onclick=placeMarker(8);></div>
+        <div id=9 class="square" onclick=placeMarker(9);></div>
+    </div>
+    
+    <div class="center">
+        <h2 id=status ></h2>
+    <h3 class="rules">
+        <p>The Rules of the game are:</p> 
+        <p>1. Decide who is going to be X and who is going to be O.</p>
+        <p>2. Take turns marking in the grid your corresponding letter either "X or O"</p>
+        <p>3. First to get 3 of their letters in a row horizontally, diagonally, or veritically wins the game.</p>
+        <p>4. If all squares are full before there is a win the game will be declared a draw.</p>
+        <p>5. To begin the game press the start button and to replay the game after winning or if there is a draw.</p>
+    </h2>
+    <button type="button" id=btnStr onclick=startButton()>Start</button>
+    </div>
+    </body>
+</html>
